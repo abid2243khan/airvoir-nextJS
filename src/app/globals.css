@@ -99,6 +99,20 @@ a {
   }
   .stepsWrapper{
     .stepContentWrapper{
+      &.active       
+      .title{
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html{
+    font-size: 5px;
+  }
+  .stepsWrapper{
+    .stepContentWrapper{
       flex-direction: column;
       &.active .body {
         border-top: 4px solid #3F8EF7;
